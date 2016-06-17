@@ -1,130 +1,208 @@
-/*box for links*/
-#link_box{
-  font-family:dosis;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size:16px;
-  height:auto;
-  width:400px;
-  margin-right:auto;
-  margin-left:auto;
-  clear:both;
-}
-
-#link_box ul{
-  list-style-type: none;
-  margin:0;
-  padding:0;
-  text-align:center;
-}
-
-#link_box a{
-  display:block;
-  width:200px;
-  opacity: .8;
-  color:black;
-  text-decoration:none;
-  -webkit-transition: all 0.3s linear; 
-  -webkit-transition: all 0.3s linear;
-  -moz-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
-
-#link_box a:hover{
-  opacity:1;
-  background-color:#f3f3f3;
-  -webkit-transition: all 0.3s linear; 
-  -webkit-transition: all 0.3s linear;
-  -moz-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
-
-#link_box li{
-  float:left;
-}
-
-.tab_info{
-  font-family:georgia;
-  font-size:15px;
-  text-align:center;
-  text-decoration: none;
-  height:auto;
-  width:400px;
-  padding:10px;  
-  margin-top:70px;
-  margin-right:auto;
-  margin-left:auto;
-  border:1px solid black;
-}
-
-/*bottom*/
-#bottom{
-  width:99.5%;
-  border:3px solid black;
-  position:absolute;
-  font-family:dosis;
-  left:0px;
-  height:60px;
-  bottom:0px;
-}
-
-/*name*/
-#title{
-  color:#4E98B5;
-  font-family:dosis;
-  font-size:56px;
-  font-weight: 300;
-  text-align:center;
-  text-decoration: none;
-  text-shadow: 2px 2px #85CCC4;
-  text-transform: uppercase;
-  letter-spacing: 6px;
-  border-bottom:3px solid black;
-  height:auto;
-  width:399px;
+/*Banner at top*/
+#header{
+  border-bottom:3px solid gray;
+  height:100px;
+  width:100%;
   padding:1px;  
   margin-right:auto;
-  margin-left:auto;
+  margin-left:0px;
 }
 
-#info{
-  font-family:georgia;
-  font-size:15px;
+/*Header text*/
+.h_title{
+  font-family:'Montserrat', sans-serif;  
+  font-size:56px;
+  font-weight: 400;
   text-align:left;
+  padding-left: 12px;
+  margin-top:19px;
   text-decoration: none;
-  height:auto;
-  width:399px;
-  padding:10px;  
-  margin-top:70px;
-  margin-right:auto;
-  margin-left:auto;
-  border:1px solid #85CCC4;
+  color:#4E98B5;
+  text-shadow: 2px 2px #85CCC4;
+  text-transform: uppercase;
+  letter-spacing: 5px;
 }
 
 body{
+  font-family:'Montserrat', sans-serif;  
   background-color:#CAE1ED;
   color:black;
+  width:auto;
 }
 
-#title a:link{
-  color:#4E98B5;
-  text-decoration: none;
-  text-shadow: 2px 2px #85CCC4;
+.fa-envelope-o{
+  color: #778492;
+}
+
+.fa-map-marker{
+  color: #778492;
+}
+
+.fa-circle{
+  color: #778492;
   -webkit-transition: all 0.3s linear; 
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
 
-#title a:hover{
-  color:black;
+.fa-github{
+  color: white;
   -webkit-transition: all 0.3s linear; 
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
 
-#title a:visited{
-  color:#4E98B5;
+.fa-linkedin{
+  color: white;
+  -webkit-transition: all 0.3s linear; 
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+/*You need to capture the hover event on the container span ".fa-stack"*/
+.fa-stack:hover .fa-circle{
+  color:#CAE1ED;
+  -webkit-transition: all 0.3s linear; 
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.fa-stack:hover .fa-github{
+  color: #778492;
+  -webkit-transition: all 0.3s linear; 
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.fa-stack:hover .fa-linkedin{
+  color: #778492;
+  -webkit-transition: all 0.3s linear; 
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+/*Top links*/
+.button{
+  width:90px;
+  height:auto;
+  margin-top:-50px;
+  margin-left:90%;
+}
+
+/*Left container*/
+#left{
+  margin-top:18px;
+  text-align: center;
+  padding: 12px 1px 12px 1px; 
+  height:auto;
+  width:320px;
+  border:1px solid #85CCC4;
+}
+
+#left img{
+  height:auto;
+  width:300px;
+  opacity:0.7;
+  -webkit-transition: all 0.6s linear; 
+  -webkit-transition: all 0.6s linear;
+  -moz-transition: all 0.6s linear;
+  transition: all 0.6s linear;
+}
+
+#left img:hover{
+  opacity:0.9;
+  -webkit-transition: all 0.6s linear; 
+  -webkit-transition: all 0.6s linear;
+  -moz-transition: all 0.6s linear;
+  transition: all 0.6s linear;
+}
+
+/*Right container*/
+#right{
+  color:#4F5557;
+  margin-top:-402px;
+  float:right;
+  text-align: left;
+  padding: 3px 1px 10px 14px; 
+  height:auto;
+  width:180px;
+  border:1px solid #85CCC4;
+}
+
+#strava{
+  color:#4F5557;
+  margin-top:-315px;
+  float:right;
+  text-align: left;
+  padding: 6px 1px 4px 14px; 
+  height:20px;
+  width:180px;
+  border:1px solid #85CCC4;
+  -webkit-transition: all 0.6s linear; 
+  -webkit-transition: all 0.6s linear;
+  -moz-transition: all 0.6s linear;
+  transition: all 0.6s linear;
+}
+
+/*Top right bottom left*/
+#strava:hover{
+  position:relative;
+  color:#4F5557;
+  margin-top:-315px;
+  float:right;
+  text-align: left;
+  padding: 2px 1px 4px 7px; 
+  height:490px;
+  width:425px;
+  border:1px solid #85CCC4;
+  background-color:#CAE1ED;
+  z-index:99999999;
+  -webkit-transition: all 0.5s linear; 
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+.hidden {
+  opacity: 0;
+  -webkit-transition: all 0.2s linear; 
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+#strava:hover .hidden{
+  margin-left:10px;
+  opacity:1;
+  -webkit-transition: all 0.2s linear; 
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+@media screen and (max-width: 1200px){
+  #middle{
+    width:44%;
+  }
+}
+
+#middle_wrapper{
+  position:absolute;
+  float: left;
+  width: 100%;
+  z-index:0;
+}
+
+#middle_column{
+  /*top right bottom left*/
+  z-index:0;
+  margin: -402 240px 0 350px;
+  padding: 6px 1px 10px 13px; 
+  border:1px solid #85CCC4;
 }

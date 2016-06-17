@@ -4,19 +4,58 @@
     <title>Welcome!</title>
     <link href='http://fonts.googleapis.com/css?family=Dosis:400,300' rel='stylesheet' type='text/css'>
     <link href = "styles/style.css" rel = "stylesheet">
+    <script src="https://use.fontawesome.com/1ed91e8251.js"></script>
   </head>
-  <div id = "title">
-      <a href ="/">Casey Chien</a>
-  </div>
   <body>
-    <div id = "link_box">
-      <ul>
-        <li><a href = "about.html">About</a></li>
-        <li><a href = "contact.html">Contact</a></li>
-      </ul>
+    <div id="header">
+      <div class = "h_title">casey chien</div>
+
+      <div class = "button">
+        <!--Github-->
+        <a href = "http://github.com/caseychien"><span class="fa-stack fa-lg">
+           <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+        </span></a>
+
+        <!--LinkedIn-->
+        <a href = "https://www.linkedin.com/in/casey-chien-55560467"><span class="fa-stack fa-lg">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+        </span></a>
+      </div> <!--Closing div for button-->
+    </div> <!--Closing div for header-->
+    <div id = "left">
+      <img src = "img/track.jpg"/>
     </div>
-    <div id = "info">
-      <center><i>Citius - Altius - Fortius</i></center>
+    <div id = "right">
+      <div style="font-weight:bold; font-family:'Montserrat', sans-serif;
+        font-size: 24px; color: #545e67;; text-align:center">
+        Contact Me<br>
+      </div>
+      <i class="fa fa-envelope-o"></i>&nbsp;&nbsp;cdchien@ucsc.edu<br>
+      <i class="fa fa-map-marker"></i>&nbsp;&nbsp;Bay Area
+    </div>
+    <div id = "strava">
+      Find me on Strava!
+
+      <br><br>
+      <div class = "hidden">
+        <iframe height='454'
+            width='400'
+            frameborder='0'
+            allowtransparency='true'
+            scrolling='no'
+            src='https://www.strava.com/athletes/6131255/latest-rides/bcec24b56c502150601ff47a358174a4a0febc33'>
+        </iframe>
+      </div>
+    </div>
+    <div id = "middle_wrapper">
+      <div id = "middle_column">
+        Hello there!<br><br>
+        I am a sophomore at UC Santa Cruz pursuing a degree in computer science.<br><br>
+        I also run DIII cross country/track. I started running competitvely about 4 years ago.<br><br>
+        You can find some of my work on my Github and feel free to check out my LinkedIn!
+      </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src = "main.js"></script>

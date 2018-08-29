@@ -89,7 +89,8 @@
   margin: auto;
   width: 750px;
   height: 367px;
-  border: 1px solid black;
+  border: 1px solid #aaa;
+  background-color: white;
 }
 
 @media screen and (max-width: 620px) {
@@ -100,6 +101,12 @@
     padding: 3%;
    }
   }
+
+body {
+  /*background-image: url('img/trees.JPG');*/
+  /*background-size: cover;*/
+  background-color: #d4e9f5;
+}
 
 ul {
   list-style: none;
